@@ -24,7 +24,7 @@
 ### Website:
 The website for crop loss prediction can be found [here](https://tranquil-inlet-09299-e56258c6ec48.herokuapp.com/)
 
-![Crop Loss Prediction Website]("/pictures/UI.png)
+![Crop Loss Prediction Website](/pictures/UI.png)
 
 ### Model Selection and Tuning:
 
