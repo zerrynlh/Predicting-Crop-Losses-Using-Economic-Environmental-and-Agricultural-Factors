@@ -3,7 +3,7 @@
 ### Objective: 
 - The goal is to predict food loss and understand the significance of each factor. Why do we want to predict food loss?
     - Mitigating food insecurity: Enable policymakers to optimize food distribution.
-    - Environmental sustainability: [Food loss and waste account for 8-10% of annual global greenhouse gas emissions](https://unfccc.int/news/food-loss-and-waste-account-for-8-10-of-annual-global-greenhouse-gas-emissions-cost-usd-1-trillion)
+    - Environmental sustainability: [Food loss and waste account for 8-10% of annual global greenhouse gas emissions.](https://unfccc.int/news/food-loss-and-waste-account-for-8-10-of-annual-global-greenhouse-gas-emissions-cost-usd-1-trillion)
     - Reduce financial loss: Reduction of post-harvest losses incurred by farmers.
     - Policy/planning: Enable businesses and governments to implement targeted interventions and shape food policies.
 
@@ -15,8 +15,8 @@
 - **Consumer Price Indices** – Food is heavily weighted in CPI. When the cost of harvesting and transporting food falls below market it becomes unprofitable to do so and leads food loss.
 
 ### Datasets:
-- **Source:** FAO [(Food and Agriculture Organization of the United Nations)](https://www.fao.org/faostat/en/#data).
-- **Years Covered:** 2010–2022.
+- **Source:** FAO [(Food and Agriculture Organization of the United Nations)](https://www.fao.org/faostat/en/#data)
+- **Years Covered:** 2010–2022
 
 ### Research:
 - The [USDA website](https://www.ers.usda.gov/amber-waves/2020/march/food-loss-why-food-stays-on-the-farm-or-off-the-market/) was utilized to understand factors that affect food production.
