@@ -24,6 +24,8 @@
 ### Website:
 The website for crop loss prediction can be found [here](https://tranquil-inlet-09299-e56258c6ec48.herokuapp.com/)
 
+[Website UI](pictures/UI.png)
+
 ### Model Selection and Tuning:
 
 After experimenting with various models, the Random Forest Regressor was determined to be the most effective, achieving:
