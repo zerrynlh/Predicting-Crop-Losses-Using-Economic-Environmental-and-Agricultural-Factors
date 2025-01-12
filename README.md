@@ -33,7 +33,7 @@ After experimenting with various models, the Random Forest Regressor was determi
 - Mean Absolute Error (MAE): 27.57
 - R² Score: 0.87
 - Root Mean Squared Error (RMSE): 74.80
-- This high R² score indicates that the model explains 86% of the variance in food loss, reflecting strong predictive capability.
+- This high R² score indicates that the model explains 87% of the variance in food loss, reflecting strong predictive capability.
 
 #### Preprocessing Pipeline:
 - Robust Scaling to handle features with significant outliers and large variations (i.e. pesticide use).
