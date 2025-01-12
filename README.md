@@ -22,7 +22,7 @@
 - The [USDA website](https://www.ers.usda.gov/amber-waves/2020/march/food-loss-why-food-stays-on-the-farm-or-off-the-market/) was utilized to understand factors that affect food production.
 
 ### Website:
-The website for crop loss prediction can be found [here](https://tranquil-inlet-09299-e56258c6ec48.herokuapp.com/)
+The website for crop loss prediction can be found [here.](https://tranquil-inlet-09299-e56258c6ec48.herokuapp.com/)
 
 ![Website UI](pictures/UI.png)
 
