@@ -5,3 +5,7 @@
 __pycache__/
 *.pyc
 *.pyo
+
+# Ignore model and raw data
+random_forest_pipeline.pkl
+raw_data/*.csv

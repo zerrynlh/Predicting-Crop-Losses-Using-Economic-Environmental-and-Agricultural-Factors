@@ -24,15 +24,13 @@
 ### Website:
 The website for crop loss prediction can be found [here](https://tranquil-inlet-09299-e56258c6ec48.herokuapp.com/)
 
-![Crop Loss Prediction Website](/pictures/UI.png)
-
 ### Model Selection and Tuning:
 
 After experimenting with various models, the Random Forest Regressor was determined to be the most effective, achieving:
 
-- Mean Absolute Error (MAE): 27.33
-- R² Score: 0.86
-- Root Mean Squared Error (RMSE): 79.67
+- Mean Absolute Error (MAE): 27.57
+- R² Score: 0.87
+- Root Mean Squared Error (RMSE): 74.80
 - This high R² score indicates that the model explains 86% of the variance in food loss, reflecting strong predictive capability.
 
 #### Preprocessing Pipeline:
