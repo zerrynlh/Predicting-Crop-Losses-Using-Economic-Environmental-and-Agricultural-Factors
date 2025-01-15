@@ -8,3 +8,7 @@ __pycache__/
 
 # Ignore model
 random_forest_pipeline.pkl
+
+# Large files
+cleaned_data
+raw_data.7z
