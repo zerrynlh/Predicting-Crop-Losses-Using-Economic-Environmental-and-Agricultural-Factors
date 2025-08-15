@@ -1,0 +1,238 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div>
+        {% if prediction %}
+            <h2>Predicted Crop Loss: {{ prediction }} tonnes</h2>
+        {% endif %}
+        </div>
+    <div class="the-form">
+        <form method="post" class="form-container form-grid">
+            <div class="form-item">
+                <label for="item_ag">Select Crop Type:</label>
+                <select name="item_ag" id="item_ag" required>
+                    <option value=''>--Select an option--</option>
+                    <option value='0'>Almonds, in shell</option>
+                    <option value='1'>Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw</option>
+                    <option value='2'>Apples</option>
+                    <option value='3'>Apricots</option>
+                    <option value='4'>Areca nuts</option>
+                    <option value='5'>Artichokes</option>
+                    <option value='6'>Asparagus</option>
+                    <option value='7'>Avocados</option>
+                    <option value='8'>Bambara beans, dry</option>
+                    <option value='9'>Bananas</option>
+                    <option value='10'>Barley</option>
+                    <option value='11'>Beans, dry</option>
+                    <option value='12'>Blueberries</option>
+                    <option value='13'>Brazil nuts, in shell</option>
+                    <option value='14'>Broad beans and horse beans, dry</option>
+                    <option value='15'>Broad beans and horse beans, green</option>
+                    <option value='16'>Buckwheat</option>
+                    <option value='17'>Buffalo fat, unrendered</option>
+                    <option value='18'>Butter of cow milk</option>
+                    <option value='19'>Cabbages</option>
+                    <option value='20'>Cantaloupes and other melons</option>
+                    <option value='21'>Carrots and turnips</option>
+                    <option value='22'>Cashew nuts, in shell</option>
+                    <option value='23'>Cashewapple</option>
+                    <option value='24'>Cassava, fresh</option>
+                    <option value='25'>Castor oil seeds</option>
+                    <option value='26'>Cattle fat, unrendered</option>
+                    <option value='27'>Cauliflowers and broccoli</option>
+                    <option value='28'>Cereals n.e.c.</option>
+                    <option value='29'>Cherries</option>
+                    <option value='30'>Chestnuts, in shell</option>
+                    <option value='31'>Chick peas, dry</option>
+                    <option value='32'>Chicory roots</option>
+                    <option value='33'>Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw</option>
+                    <option value='34'>Chillies and peppers, green (Capsicum spp. and Pimenta spp.)</option>
+                    <option value='35'>Cloves (whole stems), raw</option>
+                    <option value='36'>Cocoa beans</option>
+                    <option value='37'>Coconut oil</option>
+                    <option value='38'>Coconuts, in shell</option>
+                    <option value='39'>Coffee, green</option>
+                    <option value='40'>Cotton seed</option>
+                    <option value='41'>Cottonseed oil</option>
+                    <option value='42'>Cow peas, dry</option>
+                    <option value='43'>Cranberries</option>
+                    <option value='44'>Cucumbers and gherkins</option>
+                    <option value='45'>Currants</option>
+                    <option value='46'>Dates</option>
+                    <option value='47'>Edible offal of buffalo, fresh, chilled or frozen</option>
+                    <option value='48'>Edible offal of cattle, fresh, chilled or frozen</option>
+                    <option value='49'>Edible offal of goat, fresh, chilled or frozen</option>
+                    <option value='50'>Edible offal of pigs, fresh, chilled or frozen</option>
+                    <option value='51'>Edible offal of sheep, fresh, chilled or frozen</option>
+                    <option value='52'>Edible offals of camels and other camelids, fresh, chilled or frozen</option>
+                    <option value='53'>Edible offals of horses and other equines, fresh, chilled or frozen</option>
+                    <option value='54'>Edible roots and tubers with high starch or inulin content, n.e.c., fresh</option>
+                    <option value='55'>Eggplants (aubergines)</option>
+                    <option value='56'>Eggs from other birds in shell, fresh, n.e.c.</option>
+                    <option value='57'>Fat of camels</option>
+                    <option value='58'>Fat of pigs</option>
+                    <option value='59'>Figs</option>
+                    <option value='60'>Fonio</option>
+                    <option value='61'>Ginger, raw</option>
+                    <option value='62'>Goat fat, unrendered</option>
+                    <option value='63'>Gooseberries</option>
+                    <option value='64'>Grapes</option>
+                    <option value='65'>Green corn (maize)</option>
+                    <option value='66'>Green garlic</option>
+                    <option value='67'>Groundnuts, excluding shelled</option>
+                    <option value='68'>Hazelnuts, in shell</option>
+                    <option value='69'>Hen eggs in shell, fresh</option>
+                    <option value='70'>Horse meat, fresh or chilled</option>
+                    <option value='71'>Karite nuts (sheanuts)</option>
+                    <option value='72'>Kiwi fruit</option>
+                    <option value='73'>Kola nuts</option>
+                    <option value='74'>Leeks and other alliaceous vegetables</option>
+                    <option value='75'>Lemons and limes</option>
+                    <option value='76'>Lentils, dry</option>
+                    <option value='77'>Lettuce and chicory</option>
+                    <option value='78'>Linseed</option>
+                    <option value='79'>Lupins</option>
+                    <option value='80'>Maize (corn)</option>
+                    <option value='81'>Mangoes, guavas and mangosteens</option>
+                    <option value='82'>Meat of cattle with the bone, fresh or chilled</option>
+                    <option value='83'>Meat of chickens, fresh or chilled</option>
+                    <option value='84'>Meat of goat, fresh or chilled</option>
+                    <option value='85'>Meat of pig with the bone, fresh or chilled</option>
+                    <option value='86'>Meat of sheep, fresh or chilled</option>
+                    <option value='87'>Melonseed</option>
+                    <option value='88'>Millet</option>
+                    <option value='89'>Mixed grain</option>
+                    <option value='90'>Mushrooms and truffles</option>
+                    <option value='91'>Natural honey</option>
+                    <option value='92'>Oats</option>
+                    <option value='93'>Oil of palm kernel</option>
+                    <option value='94'>Oil palm fruit</option>
+                    <option value='95'>Okra</option>
+                    <option value='96'>Olives</option>
+                    <option value='97'>Onions and shallots, dry (excluding dehydrated)</option>
+                    <option value='98'>Onions and shallots, green</option>
+                    <option value='99'>Oranges</option>
+                    <option value='100'>Other beans, green</option>
+                    <option value='101'>Other berries and fruits of the genus vaccinium n.e.c.</option>
+                    <option value='102'>Other citrus fruit, n.e.c.</option>
+                    <option value='103'>Other fruits, n.e.c.</option>
+                    <option value='104'>Other nuts (excluding wild edible nuts and groundnuts), in shell, n.e.c.</option>
+                    <option value='105'>Other oil seeds, n.e.c.</option>
+                    <option value='106'>Other pulses n.e.c.</option>
+                    <option value='107'>Other stimulant, spice and aromatic crops, n.e.c.</option>
+                    <option value='108'>Other stone fruits</option>
+                    <option value='109'>Other tropical fruits, n.e.c.</option>
+                    <option value='110'>Other vegetables, fresh n.e.c.</option>
+                    <option value='111'>Palm oil</option>
+                    <option value='112'>Papayas</option>
+                    <option value='113'>Peaches and nectarines</option>
+                    <option value='114'>Pears</option>
+                    <option value='115'>Peas, dry</option>
+                    <option value='116'>Peas, green</option>
+                    <option value='117'>Pepper (Piper spp.), raw</option>
+                    <option value='118'>Pigeon peas, dry</option>
+                    <option value='119'>Pineapples</option>
+                    <option value='120'>Pistachios, in shell</option>
+                    <option value='121'>Plantains and cooking bananas</option>
+                    <option value='122'>Plums and sloes</option>
+                    <option value='123'>Pomelos and grapefruits</option>
+                    <option value='124'>Potatoes</option>
+                    <option value='125'>Pumpkins, squash and gourds</option>
+                    <option value='126'>Quinces</option>
+                    <option value='127'>Quinoa</option>
+                    <option value='128'>Rape or colza seed</option>
+                    <option value='129'>Raspberries</option>
+                    <option value='130'>Raw milk of buffalo</option>
+                    <option value='131'>Raw milk of camel</option>
+                    <option value='132'>Raw milk of cattle</option>
+                    <option value='133'>Raw milk of goats</option>
+                    <option value='134'>Raw milk of sheep</option>
+                    <option value='135'>Rice</option>
+                    <option value='136'>Rye</option>
+                    <option value='137'>Sesame seed</option>
+                    <option value='138'>Sheep fat, unrendered</option>
+                    <option value='139'>Sorghum</option>
+                    <option value='140'>Sour cherries</option>
+                    <option value='141'>Soya beans</option>
+                    <option value='142'>Spinach</option>
+                    <option value='143'>Strawberries</option>
+                    <option value='144'>Sugar beet</option>
+                    <option value='145'>Sugar cane</option>
+                    <option value='146'>Sunflower seed</option>
+                    <option value='147'>Sweet potatoes</option>
+                    <option value='148'>Tangerines, mandarins, clementines</option>
+                    <option value='149'>Taro</option>
+                    <option value='150'>Tea leaves</option>
+                    <option value='151'>Tomatoes</option>
+                    <option value='152'>Triticale</option>
+                    <option value='153'>Vetches</option>
+                    <option value='154'>Walnuts, in shell</option>
+                    <option value='155'>Watermelons</option>
+                    <option value='156'>Wheat</option>
+                    <option value='157'>Yams</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="production">Production (tonnes):</label>
+                <input type="number" step="0.01" name="production" required>
+            </div>
+
+            <div class="form-item">
+                <label for="cpi">Annual Consumer Price Index (CPI):</label>
+                <input type="number" step="0.01" name="cpi" required>
+            </div>
+
+            <div class="form-item">
+                <label for="food_inflation">Annual Food Inflation (%):</label>
+                <input type="number" step="0.01" name="food_inflation" required>
+            </div>
+
+            <div class="form-item">
+                <label for="temperature">Annual Temperature Change (°C):</label>
+                <input type="number" step="0.01" name="temperature" required>
+            </div>
+
+            <div class="form-item">
+                <label for="nitrogen">Cropland nitrogen (tonnes):</label>
+                <input type="number" step="0.01" name="nitrogen" required>
+            </div>
+
+            <div class="form-item">
+                <label for="phosphorus">Cropland phosphorus (tonnes):</label>
+                <input type="number" step="0.01" name="phosphorus" required>
+            </div>
+
+            <div class="form-item">
+                <label for="potassium">Cropland potassium (tonnes):</label>
+                <input type="number" step="0.01" name="potassium" required>
+            </div>
+
+            <div class="form-item">
+                <label for="fungicides">Fungicides (tonnes):</label>
+                <input type="number" step="0.01" name="fungicides" required>
+            </div>
+
+            <div class="form-item">
+                <label for="herbicides">Herbicides (tonnes):</label>
+                <input type="number" step="0.01" name="herbicides" required>
+            </div>
+
+            <div class="form-item">
+                <label for="insecticides">Insecticides (tonnes):</label>
+                <input type="number" step="0.01" name="insecticides" required>
+            </div>
+
+            <div class="form-item">
+                <label for="rodenticides">Rodenticides (tonnes):</label>
+                <input type="number" step="0.01" name="rodenticides" required>
+            </div>
+
+            <div class="full-width">
+                <button type="submit" class="btn-primary">Generate Estimate</button>
+            </div>
+
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+venv/
+.DS_Store
+
+# Ignore model and raw data
+random_forest_pipeline.pkl
+raw_data/

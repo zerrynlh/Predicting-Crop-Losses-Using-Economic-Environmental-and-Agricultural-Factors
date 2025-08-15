@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="ct-form-item">
+    <form method="post" class="form-container">
+        <label style="align-self: center; color: white;" class="ct_label">Click to View Correlation Coefficients:</label>
+        <div class="full-width">
+            <button type="submit" class="btn-primary">View Correlations</button>
+        </div>
+    </form>
+</div>
+
+<div>
+    {% if plot_uri %}
+        <img src="{{ plot_uri }}"/>
+    {% endif %}
+</div>
+
+{% endblock %}
