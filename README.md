@@ -1,4 +1,4 @@
-# Employing Machine Learning to Predict Food Loss in Agricultural Production and Post-Harvest Stages Using Temperature Changes, Nutrient Balance, Crop Yield, Pesticide Use, and Economic Indicators
+# Employing Machine Learning to Predict Food Loss During the  Agricultural Production Stage Using Temperature Changes, Nutrient Balance, Crop Yield, Pesticide Use, and Economic Indicators
 
 ### Objective: 
 - The goal is to predict food loss and understand the significance of each factor. Why do we want to predict food loss?
